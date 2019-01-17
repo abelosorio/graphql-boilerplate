@@ -1,0 +1,35 @@
+{
+  "name": "news-service",
+  "version": "1.0.0",
+  "description": "Provides news from different sources from all over the web.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -w src --config .nodemon.json --exec \"babel-node src\"",
+    "build": "npm run cleanup && babel src -D -d dist",
+    "start": "node dist/index.js",
+    "cleanup": "rm -rf dist"
+  },
+  "keywords": [
+    "Node.js",
+    "GraphQL"
+  ],
+  "author": "Abel M. Osorio <abel.m.osorio@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^2.3.1",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "graphql": "^14.1.1",
+    "http": "0.0.0",
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babel-plugin-root-import": "^6.1.0",
+    "nodemon": "^1.18.9"
+  }
+}

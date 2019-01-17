@@ -1,0 +1,4 @@
+# This is an empty type, meant to be extended by other entities.
+type Query {
+  _empty: String
+}
