@@ -45,7 +45,7 @@ git remote add origin <your-repository-url>
       }
 
       extend type Query {
-        people: [person]
+        people: [Person]
       }
       ```
       Again, all these files will be merged into a single file, so make
