@@ -2,6 +2,20 @@
 
 This is my boilerplate for Node and GraphQL (supports Subscriptions).
 
+## Quick start
+
+- Clone the repo:
+```
+git clone git@github.com:abelosorio/graphql-boilerplate.git <your-project>
+```
+- Remove the remote `origin` (replace it by yours):
+```
+git remote remove origin
+git remote add origin <your-repository-url>
+```
+- Run `npm install`.
+- That's it! You can now run the project with `npm run dev` for development environments or `npm run build && npm run start` for production.
+
 ## Skeleton
 
 - `dist`: Distribution folder. It contains transpiled files.
@@ -10,12 +24,12 @@ This is my boilerplate for Node and GraphQL (supports Subscriptions).
     - `resolvers`: Resolver files (Javascript code). Here you can write your
       resolver methods by creating JS files exporting an object with the
       resolvers. Example:
-      
+
       ```javascript
       const resolvers = {
         Query: {
-	      people: (_, args) => ([{ firstname: 'Abel', lastname: 'Osorio' }])
-	    }
+          people: (_, args) => ([{ firstname: 'Abel', lastname: 'Osorio' }])
+        }
       };
 
       export default resolvers;
@@ -27,7 +41,7 @@ This is my boilerplate for Node and GraphQL (supports Subscriptions).
       ```graphql
       type Person {
         firstname: String
-	    lastname: String
+        lastname: String
       }
 
       extend type Query {
