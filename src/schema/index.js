@@ -1,6 +1,6 @@
-import typeDefs from './types';
-import resolvers from './resolvers';
+import typeDefs from './types'
+import resolvers from './resolvers'
 
-const schema = { typeDefs, resolvers };
+const schema = { typeDefs, resolvers }
 
-export default schema;
+export default schema
