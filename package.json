@@ -17,7 +17,7 @@
   "author": "Abel M. Osorio <abel.m.osorio@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "apollo-server-express": "^2.3.1",
+    "apollo-server-express": "^2.14.2",
     "dotenv": "^6.2.0",
     "express": "^4.16.4",
     "graphql": "^14.1.1",
